@@ -73,6 +73,7 @@ plt.plot(sizes, accs_NN, 'b:', linewidth=3)
 plt.plot(sizes, accs_NB, 'r-.', linewidth=3)
 plt.xlabel('Size of Training Data')
 plt.ylabel('Accuracy(%)')
+plt.title('Learning Curve')
 plt.legend(['Decision Tree', 'Neural Network', 'Naive Bayes'],
            loc="lower right")
 plt.grid(True)
