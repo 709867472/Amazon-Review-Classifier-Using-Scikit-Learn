@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt
 import csv
 import sklearn
 import nltk
@@ -9,7 +8,7 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.naive_bayes import MultinomialNB
 import numpy
 import time
-import re
+import matplotlib.pyplot as plt
 start_time = time.time()
 
 
@@ -43,7 +42,7 @@ for i in range(len(text)):
     subText.append(text[i])
     subLabels.append(labels[i])
     if (i + 1) % 10000 == 0:
-        sizes.append(i + 1)
+        sizes.append((i + 1) / 1000)
         count_vect = CountVectorizer()
         X_train = count_vect.fit_transform(subText)
         X_test = count_vect.transform(text_test)
@@ -71,9 +70,9 @@ plt.figure(figsize=(15, 10))
 plt.plot(sizes, accs_DT, 'g', linewidth=3)
 plt.plot(sizes, accs_NN, 'b:', linewidth=3)
 plt.plot(sizes, accs_NB, 'r-.', linewidth=3)
-plt.xlabel('Size of Training Data')
-plt.ylabel('Accuracy(%)')
-plt.title('Learning Curve')
+plt.xlabel('Size of Training Data(K)', fontsize=15)
+plt.ylabel('Accuracy(%)', fontsize=15)
+plt.title('Learning Curve', fontsize=20)
 plt.legend(['Decision Tree', 'Neural Network', 'Naive Bayes'],
            loc="lower right")
 plt.grid(True)

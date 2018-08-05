@@ -69,11 +69,11 @@ plt.plot(recall_NN, precision_NN, color='blue',
 plt.plot(recall_NB, precision_NB, color='red',
          lw=lw, label='Naive Bayes (AP = %0.2f)' % ap_NB)
 
-plt.xlabel('Recall')
-plt.ylabel('Precision')
+plt.xlabel('Recall', fontsize=15)
+plt.ylabel('Precision', fontsize=15)
 plt.ylim([0.0, 1.0])
 plt.xlim([0.0, 1.0])
-plt.title('Precision Recall Curve')
+plt.title('Precision Recall Curve', fontsize=20)
 plt.legend(loc="lower right")
 plt.show()
 print("--- %s seconds ---" % (time.time() - start_time))

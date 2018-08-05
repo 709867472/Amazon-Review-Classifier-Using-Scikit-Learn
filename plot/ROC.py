@@ -26,6 +26,7 @@ for row in reader:
         text_train.append(row[1])
     i += 1
 
+
 # get feature matrix
 count_vect = CountVectorizer()
 X_train = count_vect.fit_transform(text_train)
@@ -68,9 +69,9 @@ plt.plot(fpr_NB, tpr_NB, color='red',
 plt.plot([0, 1], [0, 1], color='navy', lw=lw, linestyle='--')
 plt.xlim([0.0, 1.0])
 plt.ylim([0.0, 1.0])
-plt.xlabel('False Positive Rate')
-plt.ylabel('True Positive Rate')
-plt.title('ROC Curve')
+plt.xlabel('False Positive Rate', fontsize=15)
+plt.ylabel('True Positive Rate', fontsize=15)
+plt.title('ROC Curve', fontsize=20)
 plt.legend(loc="lower right")
 print("--- %s seconds ---" % (time.time() - start_time))
 plt.show()
