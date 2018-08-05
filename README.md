@@ -1,5 +1,5 @@
 There are 400K Amazon reviews in csv file: https://drive.google.com/open?id=1bDwcBdCiEZ2pfLOc6ANi85TLAspyhYUR. I just picked every 5th review as test data and the rest of them as traning data. First I use **scikit-learn** to get the feature matrix of our data, then use 3 methods including Decision Tree, Neural Network and Naive Bayes to do prediction. I also used **pyplot** to plot some curves which shown the performance of these 3 methods. 
-<img src="https://user-images.githubusercontent.com/11751622/43691377-3719cdca-98d0-11e8-99cc-615e27720e5a.png" width="1800" height="600">
+<img src="https://user-images.githubusercontent.com/11751622/43691394-938ea832-98d0-11e8-9912-8ac3b188e3ed.png" width="2000" height="600">
 <img src="https://user-images.githubusercontent.com/11751622/43691378-3ed3a7fc-98d0-11e8-83e8-8a5b3550e21a.png" width="430" height="430">
 <img src="https://user-images.githubusercontent.com/11751622/43691381-4069fd14-98d0-11e8-8cb0-dfbbbbdabcbb.png" width="430" height="430">
 
