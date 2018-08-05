@@ -1,2 +1,7 @@
-# Amazon-Review-Classifier-Using-Scikit-Learn
-Use scikit-learn to do Amazon review classification with 3 methods: Decision Tree, Neural Network and Naive Bayes
+There are 400K Amazon reviews in csv file: https://drive.google.com/open?id=1bDwcBdCiEZ2pfLOc6ANi85TLAspyhYUR. I just picked every 5th review as test data and the rest of them as traning data. First I use **scikit-learn** to get the feature matrix of our data, then use 3 methods including Decision Tree, Neural Network and Naive Bayes to do prediction. I also used **pyplot** to plot some curves which shown the performance of these 3 methods. 
+<img src="https://user-images.githubusercontent.com/11751622/43679223-93101d5a-97d6-11e8-8942-2c0c18a1641c.png" width="1800" height="600">
+<img src="https://user-images.githubusercontent.com/11751622/43679140-eb49ebe2-97d4-11e8-8f93-1a37642ded07.png" width="430" height="430">
+<img src="https://user-images.githubusercontent.com/11751622/43679141-ee3d114e-97d4-11e8-80af-239a6967592e.png" width="430" height="430">
+
+According to these curves, we can conclude that, if we have enough data (int our example, it should be more than 200k) to train our model, we should use Neural Network. So I produced my prediction model: model.pkl, using Neural Network.
+
